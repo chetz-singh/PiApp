@@ -36,6 +36,9 @@ public class AppTest
      */
     public void testApp()
     {
-      Assert.assertTrue(App.getNumericValueOfPi()>3.14 && App.getNumericValueOfPi() <3.15);
+      Assert.assertTrue(
+             (App.getNumericValueOfPi(1,-1)>3.14 && App.getNumericValueOfPi(1,-1) < 3.15)
+             && (App.getNumericValueOfPi(2,200)>3)
+             );
     }
 }
